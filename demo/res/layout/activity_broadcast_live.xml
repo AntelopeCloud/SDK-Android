@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+    
+   <include
+        layout="@layout/titleview"
+        />
+
+
+<com.lingyang.sdk.view.LYGLCameraEncoderView
+    android:id="@+id/ly_preview"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="110dp"
+    android:layout_marginTop="45dp"
+    android:layout_height="match_parent"/>
+
+ -->
+    <Button
+        android:id="@+id/btn_togglecamera"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_margin="5dp"
+        android:textSize="18sp"
+        android:background="@color/colorOrange"
+        android:layout_alignParentBottom="true"
+        android:text="Toggle Camera"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/btn_toggleflash"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_margin="5dp"
+        android:textSize="18sp"
+        android:background="@color/colorOrange"
+        android:text="Tggle Flash"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_margin="5dp"
+        android:layout_above="@+id/btn_togglecamera"
+        android:textSize="18sp"
+        android:background="@color/colorOrange"
+        android:text="开始直播"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/btn_end"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:textSize="18sp"
+        android:layout_above="@+id/btn_toggleflash"
+        android:layout_margin="5dp"
+        android:background="@color/colorOrange"
+        android:layout_alignParentRight="true"
+        android:text="结束直播"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>
